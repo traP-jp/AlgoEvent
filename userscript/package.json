@@ -1,0 +1,17 @@
+{
+  "name": "algoevent-userscript",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "clean": "rm -rf dist node_modules"
+  },
+  "devDependencies": {
+    "@types/tampermonkey": "^5.0.4",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.7",
+    "vite-plugin-monkey": "^5.0.5"
+  }
+}
