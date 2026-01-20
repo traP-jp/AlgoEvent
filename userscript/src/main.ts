@@ -1,1 +1,1 @@
-console.log('AlgoEvent UserScript loaded')
+console.log("AlgoEvent UserScript loaded");

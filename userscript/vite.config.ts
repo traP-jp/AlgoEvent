@@ -1,20 +1,22 @@
-import { defineConfig } from 'vite'
-import monkey from 'vite-plugin-monkey'
+import { defineConfig } from "vite";
+import monkey from "vite-plugin-monkey";
 
 export default defineConfig({
   plugins: [
     monkey({
-      entry: 'src/main.ts',
+      entry: "src/main.ts",
       userscript: {
-        name: 'Browser scripts to help AlgoEvent',
-        namespace: 'https://github.com/traP-jp',
-        author: 'traP-jp',
-        version: '0.1',
-        match: ['*://*/*'],
+        name: "Browser scripts to help AlgoEvent",
+        namespace: "https://github.com/traP-jp",
+        version: "0.1",
+        author: "traP Community",
+        match: ["*://*/*"],
+        connect: ["algo_event.trap.show"],
+        grant: ["GM.setValue", "GM.getValue", "GM.xmlHttpRequest"],
       },
       build: {
-        fileName: 'algoevent.user.js',
+        fileName: "algo_event.user.js",
       },
     }),
   ],
-})
+});

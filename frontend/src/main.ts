@@ -1,7 +1,7 @@
-import { LitElement, css, html } from 'lit'
-import { customElement } from 'lit/decorators.js'
+import { LitElement, css, html } from "lit";
+import { customElement } from "lit/decorators.js";
 
-@customElement('algo-app')
+@customElement("algo-app")
 export class AlgoApp extends LitElement {
   static styles = css`
     :host {
@@ -15,18 +15,18 @@ export class AlgoApp extends LitElement {
     h1 {
       color: #1a1a1a;
     }
-  `
+  `;
 
   render() {
     return html`
       <h1>AlgoEvent</h1>
       <p>競プロイベント情報まとめサイト</p>
-    `
+    `;
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'algo-app': AlgoApp
+    "algo-app": AlgoApp;
   }
 }

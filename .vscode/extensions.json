@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "fwcd.kotlin",
+    "jetbrains.kotlin",
+    "runem.lit-plugin",
+    "vscjava.vscode-gradle"
+  ]
+}

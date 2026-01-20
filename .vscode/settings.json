@@ -1,0 +1,11 @@
+{
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[kotlin]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "fwcd.kotlin"
+  },
+  "html.customData": [
+    "./frontend/node_modules/@shoelace-style/shoelace/dist/vscode.html-custom-data.json"
+  ]
+}

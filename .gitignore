@@ -1,3 +1,5 @@
+### Gradle
+
 .gradle
 **/build/
 !**/src/**/build/
@@ -19,15 +21,3 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
-
-# Node.js
-**/node_modules/
-**/dist/
-
-# IDE
-.idea/
-*.iml
-
-# OS
-.DS_Store
-Thumbs.db

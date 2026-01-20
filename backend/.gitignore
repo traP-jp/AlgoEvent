@@ -1,27 +1,18 @@
-# Backend .gitignore
+### Kotlin
 
-# Build outputs
-build/
-out/
-
-# IDE
-.idea/
-*.iml
-*.ipr
-*.iws
-.project
-.classpath
-.settings/
-
-# Gradle
-.gradle/
-gradle-app.setting
-!gradle-wrapper.jar
-!gradle-wrapper.properties
-.gradletasknamecache
-
-# Kotlin
+# Compiled class file
 *.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
 *.jar
 *.war
 *.nar
@@ -30,9 +21,9 @@ gradle-app.setting
 *.tar.gz
 *.rar
 
-# OS
-.DS_Store
-Thumbs.db
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
 
-# Logs
-*.log
+# Kotlin Gradle plugin data, see https://kotlinlang.org/docs/whatsnew20.html#new-directory-for-kotlin-data-in-gradle-projects
+.kotlin/

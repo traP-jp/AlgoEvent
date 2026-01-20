@@ -1,8 +1,7 @@
-plugins {
-    base
-}
+plugins { base }
 
-val pnpmCommand = if (System.getProperty("os.name").lowercase().contains("win")) "pnpm.cmd" else "pnpm"
+val pnpmCommand =
+        if (System.getProperty("os.name").lowercase().contains("win")) "pnpm.cmd" else "pnpm"
 
 tasks.register<Exec>("pnpmInstall") {
     description = "Install npm dependencies"
@@ -36,10 +35,6 @@ tasks.register<Delete>("pnpmClean") {
     delete("dist", "node_modules")
 }
 
-tasks.named("build") {
-    dependsOn("pnpmBuild")
-}
+tasks.named("build") { dependsOn("pnpmBuild") }
 
-tasks.named("clean") {
-    dependsOn("pnpmClean")
-}
+tasks.named("clean") { dependsOn("pnpmClean") }
